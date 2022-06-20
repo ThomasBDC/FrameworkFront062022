@@ -1,0 +1,72 @@
+body{
+    background-color: aqua;
+}
+
+body.modal-open{
+    overflow: hidden;
+}
+
+.modal{
+    visibility: hidden;
+}
+
+.modal.show{
+    visibility: visible;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: #0c0c0ccc;
+    z-index: 1000;
+}
+
+.modal.show .modal-content{
+    transition: 0.5s;
+}
+
+.modal.show .modal-content{
+    border: solid 1px #EEEEEE;
+    background-color: white;
+    border-radius: 5px;
+    position: fixed;
+    top:50%;
+    right:50%;
+    transform:translate(50%,-50%);
+
+    min-width: 350px;
+    max-width: 100%;
+}
+
+.modal .modal-title{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.modal .modal-header,
+.modal .modal-body,
+.modal .modal-footer{
+    padding: 15px;
+}
+
+.modal .modal-header{
+    border-bottom: 1px solid #969595;
+}
+
+.modal .modal-footer{
+    border-top: 1px solid #969595;  
+}
+
+/* Croix de fermeture modal */
+.modal .cross-close-modal{
+    font-weight: 100;
+    font-size: 17px;
+    float:right;
+    transition: 0.5s;
+    font-family: sans-serif;
+}
+
+.modal .cross-close-modal:hover{
+    cursor: pointer;
+    transform: rotate(180deg);
+}
