@@ -1,0 +1,44 @@
+@import url("/colors.css");
+
+.paginate-component{
+    display: flex;
+}
+
+.paginate-component .paginate-item{
+    list-style: none;
+    border: 1px solid var(--primary-color);
+}
+
+.paginate-component .paginate-item:first-child{
+    border-radius: 5px 0px 0px 5px;
+}
+
+.paginate-component .paginate-item:last-child{
+    border-radius: 0px 5px 5px 0px;
+}
+
+.paginate-component .paginate-item:hover{
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color-hover);
+}
+
+.paginate-component .paginate-item:hover .paginate-link{
+    color:white;
+}
+
+.paginate-component .paginate-item.active{
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color-hover);
+}
+
+.paginate-component .paginate-item.active .paginate-link{
+    color:white;
+    font-weight: bold;
+}
+
+.paginate-component .paginate-item .paginate-link{
+    color: var(--primary-color-hover);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
