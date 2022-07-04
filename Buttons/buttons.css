@@ -1,0 +1,30 @@
+@import url("/colors.css");
+
+.btn{
+    padding: 10px 15px;
+    border:none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    cursor:pointer;
+}
+
+.btn.btn-primary{
+    background-color: var(--primary-color);
+    color:white;
+}
+
+.btn.btn-primary:hover{
+    background-color: var(--primary-color-hover);
+}
+
+.btn.btn-secondary{
+    background-color: var(--secondary-color);
+    color:white;
+}
+
+.btn.btn-secondary:hover{
+    background-color: var(--secondary-color-hover);
+}
