@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=s, initial-scale=1.0">
     <title>Custom modal</title>
+    <link rel="stylesheet" href="/Buttons/buttons.css"/>
     <link rel="stylesheet" href="custommodal.css"/>
 </head>
 <body>
-    <button onclick="toggleModal('exampleModal')">Afficher modal</button>
+    <button onclick="toggleModal('exampleModal')" class="btn btn-primary">Afficher modal</button>
     <div class="modal" id="exampleModal">
         <div class="modal-content">
             <div class="modal-header">
@@ -19,7 +20,7 @@
                 <p>Le contenu</p>
             </div>
             <div class="modal-footer">
-                <button class="btn-close-modal">Fermer</button>
+                <button class="btn-close-modal btn btn-secondary">Fermer</button>
             </div>
         </div>
     </div>
