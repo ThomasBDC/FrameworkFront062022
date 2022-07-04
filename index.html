@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="studiFw.css"/>
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar" id="navbarSite">
+            <div class="left-side"><a href="#">M</a></div>
+            <ul class="center navbar-menu expand-responsive">
+                <li>
+                    <a href="#">Accueil</a>
+                </li>
+                <li>
+                    <a href="#">Articles</a>
+                </li>
+                <li>
+                    <a href="#">A propos</a>
+                </li>
+                <li>
+                    <a href="#">Qui sommes-nous</a>
+                </li>
+                <li>
+                    <a href="#">Nos partenaires</a>
+                </li>
+            </ul>
+            <div class="">
+                <i class="btn-burger toggle-navbar" data-cibleidnavbar="navbarSite"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Documentation de mes réalisations</h1>
+
+        <div>
+            <h2>Les boutons</h2>
+            <button class="btn btn-primary">Primary</button>
+            <button class="btn btn-secondary">Secondary</button>
+        </div>
+
+        <hr>
+        
+        <div>
+            <h2>La pagination</h2>
+            <ul class="paginate-component">
+                <li class="paginate-item"><a href="#" class="paginate-link">Précédent</a></li>
+                <li class="paginate-item"><a class="paginate-link" href="#">1</a></li>
+                <li class="paginate-item active"><a class="paginate-link" href="#">2</a></li>
+                <li class="paginate-item"><a class="paginate-link" href="#">3</a></li>
+                <li class="paginate-item"><a class="paginate-link" href="#">Suivant</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Modal</h2>
+            <button onclick="toggleModal('exampleModal')" class="btn btn-primary">Afficher modal</button>
+    <div class="modal" id="exampleModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Titre</h3>
+                <span class="btn-close-modal cross-close-modal">X</span>
+            </div>
+            <div class="modal-body">
+                <p>Le contenu</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-close-modal btn btn-secondary">Fermer</button>
+            </div>
+        </div>
+    </div>
+        </div> 
+    </main>
+   
+    <script src="studiFw.js"></script>
+</body>
+</html>

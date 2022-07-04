@@ -1,5 +1,6 @@
 Modal OK
-Composants (header, footer ...)
-Caroussel
-Pagination
+Pagination OK
 Menu burger OK
+
+Composants (header, footer ...)
+Caroussel 
