@@ -1,0 +1,41 @@
+.caroussel{
+}
+
+.caroussel .caroussel-container{
+}
+
+.caroussel .caroussel-container .caroussel-slide{
+    transition: all 0.5s;
+    opacity: 0;
+    position: absolute;
+}
+
+.caroussel .caroussel-container .caroussel-slide.active{
+    opacity: 1;
+    left:0;
+}
+
+.caroussel .caroussel-container .caroussel-slide .caroussel-img{
+    width: 100%;
+}
+
+.caroussel-buttons {
+}
+
+.caroussel-buttons button{
+    background-color: transparent;
+    border:none;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    bottom: 50%;
+    position: absolute;
+}
+
+.caroussel-buttons .caroussel-prev{
+    left: 3%;
+}
+
+.caroussel-buttons .caroussel-next{
+    right: 3%;
+}
