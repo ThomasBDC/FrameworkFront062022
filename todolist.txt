@@ -1,6 +1,5 @@
-Modal OK
-Pagination OK
-Menu burger OK
-
-Composants (header, footer ...)
-Caroussel 
+FlipBox
+MenuLatéral
+Calendrier
+Animations simples (ex : TailWind)
+Barre de login

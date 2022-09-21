@@ -1,0 +1,40 @@
+html{
+    background-color: black;
+}
+.flipbox{
+    width: 150px;
+    height: 200px;
+    perspective: 1000px;
+}
+
+.flipbox .flip-face img{
+    width: 150px;
+    height: 200px;
+}
+
+.flipbox .flip-face{
+    position: absolute;
+    transition: 0.5s;
+    
+}
+
+.flip-front{
+    opacity: 1;
+}
+.flip-back{
+    opacity: 1;
+}
+
+.flipbox:hover{
+    cursor: pointer;
+}
+
+.flipbox:hover .flip-back{
+    opacity: 0;
+    transform: rotateY(180deg);
+}
+
+.flipbox:hover .flip-front{
+    opacity: 1;
+    transform: rotateY(180deg);
+}
