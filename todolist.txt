@@ -1,4 +1,4 @@
-FlipBox
+FlipBox OK
 MenuLatéral
 Calendrier
 Animations simples (ex : TailWind)

@@ -1,0 +1,41 @@
+body{
+    margin:0;
+}
+
+#menuLateral{
+    background-color: rgb(218, 184, 249);
+    height: 100vh;
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+#menuLateral.expand{
+    width: 300px;
+}
+
+#menuLateral.reduce{
+    width: 100px;
+}
+
+
+
+main{
+    display: inline-block;
+}
+
+.menuLinks{
+    list-style: none;
+    padding: 0;
+}
+
+#menuLateral.reduce #expandMenu{
+    transform: rotate(180deg);
+}
+
+#expandMenu{
+    float: right;
+    border-radius: 50%;
+    transition: 0.5s;
+}
