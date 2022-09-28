@@ -77,6 +77,10 @@ main{
     display: none;
 }
 
+#menuLateral.reduce .menuLinks svg{
+    width:20px;
+}
+
 .menuLinks svg{
     width:30px;
     margin-right:10px;

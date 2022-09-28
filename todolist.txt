@@ -1,5 +1,5 @@
 FlipBox OK
-MenuLatéral
+MenuLatéral OK
 Calendrier
 Animations simples (ex : TailWind)
 Barre de login
