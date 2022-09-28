@@ -3,7 +3,8 @@ body{
 }
 
 #menuLateral{
-    background-color: rgb(218, 184, 249);
+    background-color: #2d4364;
+    color: white;
     height: 100vh;
     display: inline-block;
     margin-right: 15px;
@@ -30,12 +31,58 @@ main{
     padding: 0;
 }
 
+.menuLinks li{
+    padding: 10px;
+}
+
+#menuLateral .menuLinks li.active {
+    background-color: #FFB527;
+}
+
+#menuLateral .menuLinks li.active a{
+    color:black;
+}
+
 #menuLateral.reduce #expandMenu{
     transform: rotate(180deg);
+}
+
+#expandMenu:hover{
+    cursor: pointer;
 }
 
 #expandMenu{
     float: right;
     border-radius: 50%;
     transition: 0.5s;
+    margin: 10px;
+    margin-right: -12px;
+    background: linear-gradient(3.94deg,#0B1D36 .62%,#31486A 89.1%);
+    color:white;
+    border: 1px solid white;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+}
+
+.user-photo{
+    max-width: 100%;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left:20px;
+}
+
+#menuLateral.reduce .showOnBig{
+    display: none;
+}
+
+.menuLinks svg{
+    width:30px;
+    margin-right:10px;
+}
+
+#menuLateral a{
+    color:white;
+    text-decoration: none;
 }
