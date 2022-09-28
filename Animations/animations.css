@@ -1,0 +1,22 @@
+#block1{
+    margin: auto;
+    margin-top: 100px;
+    background-color: cornflowerblue;
+    width: 50px;
+    height: 50px;
+}
+
+.animate-grow{
+    animation: grow 2s infinite;
+}
+
+@keyframes grow {
+    0%, 100% {
+        transform: scale(1);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: scale(2);
+        animation-timing-function: ease-out;
+    }
+}
