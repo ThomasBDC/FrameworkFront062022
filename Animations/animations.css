@@ -1,8 +1,8 @@
-#block1{
+.block{
     margin: auto;
     margin-top: 100px;
     background-color: cornflowerblue;
-    width: 50px;
+    width: 120px;
     height: 50px;
 }
 
@@ -17,6 +17,35 @@
     }
     50% {
         transform: scale(2);
+        animation-timing-function: ease-out;
+    }
+}
+
+.animate-tourne{
+    animation: tourne 1s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes tourne {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.animate-bounce{
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100%{
+        transform: translateY(0px);
+        animation-timing-function: ease-in;
+    }
+    50%{
+        transform: translateY(10px);
         animation-timing-function: ease-out;
     }
 }

@@ -1,5 +1,6 @@
 FlipBox OK
 MenuLatéral OK
+Animations simples (ex : TailWind) OK
 Calendrier
-Animations simples (ex : TailWind) (à continuer)
 Barre de login
+//Autres idées ?
