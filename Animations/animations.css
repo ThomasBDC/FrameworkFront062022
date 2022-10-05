@@ -39,6 +39,10 @@
     animation: bounce 1s infinite;
 }
 
+.bounce-clicked:focus {
+    animation:tourne 1s;
+}
+
 @keyframes bounce {
     0%, 100%{
         transform: translateY(0px);
