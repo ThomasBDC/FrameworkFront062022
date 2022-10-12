@@ -3,3 +3,8 @@
     background-color: aqua;
     width: fit-content;
 }
+
+.calendar th{
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+}

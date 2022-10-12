@@ -19,8 +19,13 @@ document.querySelectorAll(".calendar").forEach(calendar => {
     let firstWeekOfMonth = getWeekNumber(allDates[0]);
 
     let table = document.createElement("table");
-    let allDatesTried = twoDimensionArray(7, 7)
+    let entete = document.createElement("tr");
+    let entetecontent = document.createElement("th");
+    entetecontent.colSpan = 8;
+    entetecontent.innerHTML = allDates[0].toLocaleString('default', { month: 'long' });
 
+    table.append(entetecontent);
+    let allDatesTried = twoDimensionArray(7, 7)
     allDates.forEach(date => {
         let noSemaine = getWeekNumber(date);    
         let DayNumber = date.getDay();
