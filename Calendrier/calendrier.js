@@ -111,6 +111,9 @@ function fillCalendar(month, year, calendar){
             }
         });
     });
+
+
+    //TODO Ici il faut addeventlistener click sur tous les td du calendar
 }
 
 function getWeekNumber(d) {
