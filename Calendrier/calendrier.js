@@ -1,13 +1,3 @@
-/*
-
-Todo list : 
--Ajoute un évènement sur le click sur une date
--Quand on clique sur la date, il faut la positionner sur l'input qu'on récupèrera grâce au 
-data-target
-calendar.dataset.target
-*/
-
-
 function getAllDatesInMonth(month, year) {
     month = month-1;
     let date = new Date(year, month, 1);
