@@ -29,6 +29,29 @@
     </div>
     <br/>
     <br/>
+    <div style="margin-top:10px;">
+        <div class="input-date-custom">
+        <label>Période choisie</label><br/>
+        <input id="InputCalendarPeriod" type="text" class="input-date" />
+        <div class="calendar" data-target="#InputCalendarPeriod" >
+            
+        </div>
+        </div>
+    </div>
     <script src="calendrier.js"></script>
+    <script>
+        let debut = document.getElementById("InputCalendarExample");
+        let fin = document.getElementById("InputCalendarExample2");
+        fin.addEventListener("dateSelected", e=> {
+            let splittedDateDebut = debut.value.split("/");
+            let debutDate = new Date(splittedDateDebut[2], splittedDateDebut[1]-1, splittedDateDebut[0]);
+            let splittedDateFin = fin.value.split("/");
+            let finDate = new Date(splittedDateFin[2], splittedDateFin[1]-1, splittedDateFin[0]);
+
+            if(finDate < debutDate){
+                alert("La date de fin est inférieure à la date de début");
+            }
+        });
+    </script>
 </body>
 </html>

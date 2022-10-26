@@ -116,6 +116,8 @@ function fillCalendar(month, year, calendar){
                 selectedTd.classList.remove("selected");
             })
             td.classList.add("selected");
+            let event = new Event('dateSelected');
+            input.dispatchEvent(event);
         });
     });
 
