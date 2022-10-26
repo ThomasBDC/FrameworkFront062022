@@ -30,7 +30,8 @@ document.querySelectorAll(".calendar").forEach(calendar => {
 })
 
 function fillCalendar(month, year, calendar){
-
+    let inputId = calendar.dataset.target;
+    let input = document.querySelector(inputId);
     calendar.innerHTML = "";
     let allDates = getAllDatesInMonth(month, year);
 
@@ -82,6 +83,9 @@ function fillCalendar(month, year, calendar){
                 if(jour.toDateString() == today.toDateString()){
                     caseTab.classList.add("Today");
                 }
+                if(input.value == getDateString(jour.getDate(), month, year)){
+                    caseTab.classList.add("selected");
+                }
             }
             else{
             }
@@ -92,28 +96,40 @@ function fillCalendar(month, year, calendar){
     calendar.append(table);
 
     document.querySelectorAll(".MonthPrev").forEach(button=> {
-        button.addEventListener("click", button => {
+        button.addEventListener("click", e => {
             if(month-1 < 1){
                 fillCalendar(12, year-1, calendar);
             }
             else{
                 fillCalendar(month-1, year, calendar);
             }
+            input.focus();
         });
     });
     document.querySelectorAll(".MonthNext").forEach(button=> {
-        button.addEventListener("click", button => {
+        button.addEventListener("click", e => {
             if(month+1 > 12){
                 fillCalendar(1, year+1, calendar);
             }
             else{
                 fillCalendar(month+1, year, calendar);
             }
+            input.focus();
+        });
+    });
+
+    calendar.querySelectorAll("td").forEach(td => {
+        td.addEventListener("click", e => {
+            input.value = getDateString(td.innerHTML, month,year);
+
+            document.querySelectorAll("td.selected").forEach(selectedTd =>{
+                selectedTd.classList.remove("selected");
+            })
+            td.classList.add("selected");
         });
     });
 
 
-    //TODO Ici il faut addeventlistener click sur tous les td du calendar
 }
 
 function getWeekNumber(d) {
@@ -147,4 +163,8 @@ function twoDimensionArray(a, b) {
         }
     }
     return arr;
+}
+
+function getDateString(day, month, year){
+    return `${day}/${month}/${year}`;
 }

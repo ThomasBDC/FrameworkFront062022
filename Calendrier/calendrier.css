@@ -7,6 +7,10 @@
     margin-top: 2px;
     border-radius: 10px;
     padding: 5px;
+    visibility:hidden;
+    opacity: 0;
+    transition: 0.3s;
+    position: absolute;
 }
 .calendar button {
     border-radius: 5px;
@@ -26,7 +30,23 @@
     padding:2px;
 }
 
+.calendar td:hover{
+    cursor: pointer;
+    background-color:#6a6a6a;
+}
+
+
 .calendar td.Today{
     font-weight: bold;
     color: blueviolet;
+}
+
+.calendar td.selected{
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+.input-date:focus +.calendar{
+    opacity: 1;
+    visibility: visible;
 }
